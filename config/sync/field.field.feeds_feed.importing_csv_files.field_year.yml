@@ -1,0 +1,23 @@
+uuid: ff7d07b1-9da7-459c-b12a-0dca7695af29
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_year
+id: feeds_feed.importing_csv_files.field_year
+field_name: field_year
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

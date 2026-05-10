@@ -1,0 +1,20 @@
+uuid: d4e56996-05ea-4427-adf1-610c8f953fff
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - text
+id: feeds_feed.field_completionists
+field_name: field_completionists
+entity_type: feeds_feed
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

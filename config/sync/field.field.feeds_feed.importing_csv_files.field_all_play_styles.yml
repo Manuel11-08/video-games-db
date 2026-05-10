@@ -1,0 +1,22 @@
+uuid: b08c1be3-36ae-45fb-937d-ef8a959428ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_all_play_styles
+  module:
+    - text
+id: feeds_feed.importing_csv_files.field_all_play_styles
+field_name: field_all_play_styles
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: 'All Play Styles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: 80218906-38ea-41f7-880e-80e409cffed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_rating
+  module:
+    - options
+id: feeds_feed.importing_csv_files.field_rating
+field_name: field_rating
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: Rating
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

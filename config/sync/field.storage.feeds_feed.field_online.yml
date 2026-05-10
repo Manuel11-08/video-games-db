@@ -1,0 +1,18 @@
+uuid: f8d2ded7-81db-4146-838d-cc00431311f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+id: feeds_feed.field_online
+field_name: field_online
+entity_type: feeds_feed
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

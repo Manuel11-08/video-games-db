@@ -1,0 +1,19 @@
+uuid: 38acc972-1d3d-42fc-b990-60e95d7448e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_publishers
+id: feeds_feed.importing_csv_files.field_publishers
+field_name: field_publishers
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: Publishers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

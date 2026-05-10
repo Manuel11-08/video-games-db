@@ -1,0 +1,22 @@
+uuid: a842251a-f47a-4b33-8fb3-c2055fbd40ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_main_story
+  module:
+    - text
+id: feeds_feed.importing_csv_files.field_main_story
+field_name: field_main_story
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: 'Main Story'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

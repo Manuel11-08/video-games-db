@@ -1,0 +1,36 @@
+uuid: 84dcfe10-f95d-4759-bb49-6abd4633a079
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - options
+id: feeds_feed.field_rating
+field_name: field_rating
+entity_type: feeds_feed
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: e
+      label: E
+    -
+      value: m
+      label: M
+    -
+      value: t
+      label: T
+    -
+      value: ao
+      label: AO
+    -
+      value: rp
+      label: RP
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

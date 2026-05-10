@@ -1,0 +1,20 @@
+uuid: bf9d129f-e0eb-4995-a73b-62df15a304f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - text
+id: feeds_feed.field_main_extras
+field_name: field_main_extras
+entity_type: feeds_feed
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

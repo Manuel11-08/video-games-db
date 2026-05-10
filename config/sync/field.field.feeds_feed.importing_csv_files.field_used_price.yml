@@ -1,0 +1,23 @@
+uuid: 41014f37-b940-4863-97c8-e8a8be47a9b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_used_price
+id: feeds_feed.importing_csv_files.field_used_price
+field_name: field_used_price
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: 'Used Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

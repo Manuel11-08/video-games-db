@@ -1,0 +1,21 @@
+uuid: db067a34-6c69-4170-816f-3ccb4f956ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_re_release
+id: feeds_feed.importing_csv_files.field_re_release
+field_name: field_re_release
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: Re-release
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

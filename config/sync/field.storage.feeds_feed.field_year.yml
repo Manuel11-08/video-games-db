@@ -1,0 +1,20 @@
+uuid: b62e4de6-49bc-40a8-9a84-96cfb849635e
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+id: feeds_feed.field_year
+field_name: field_year
+entity_type: feeds_feed
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

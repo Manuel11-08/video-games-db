@@ -1,0 +1,22 @@
+uuid: 2b40db3e-75e5-4b76-9609-cc36ebe0e3fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_completionists
+  module:
+    - text
+id: feeds_feed.importing_csv_files.field_completionists
+field_name: field_completionists
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: Completionists
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

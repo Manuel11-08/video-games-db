@@ -1,0 +1,22 @@
+uuid: 360a90c8-c0c8-4be2-b4f8-0cb1015553c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.importing_csv_files
+    - field.storage.feeds_feed.field_main_extras
+  module:
+    - text
+id: feeds_feed.importing_csv_files.field_main_extras
+field_name: field_main_extras
+entity_type: feeds_feed
+bundle: importing_csv_files
+label: 'Main + Extras'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text
