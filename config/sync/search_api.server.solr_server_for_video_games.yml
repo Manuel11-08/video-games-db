@@ -3,20 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api_solr.solr_cache.cache_document_default_7_0_0
-    - search_api_solr.solr_cache.cache_fieldvalue_default_7_0_0
-    - search_api_solr.solr_cache.cache_filter_default_7_0_0
-    - search_api_solr.solr_cache.cache_persegfilter_default_7_0_0
-    - search_api_solr.solr_cache.cache_queryresult_default_7_0_0
-    - search_api_solr.solr_field_type.text_edge_und_6_0_0
+    - search_api_solr.solr_cache.cache_document_default_9_0_0
+    - search_api_solr.solr_cache.cache_fieldvalue_default_9_0_0
+    - search_api_solr.solr_cache.cache_filter_default_9_0_0
+    - search_api_solr.solr_cache.cache_persegfilter_default_9_0_0
+    - search_api_solr.solr_cache.cache_queryresult_default_9_0_0
+    - search_api_solr.solr_field_type.text_edge_und_7_0_0
     - search_api_solr.solr_field_type.text_edgestring_und_6_0_0
-    - search_api_solr.solr_field_type.text_en_6_0_0
-    - search_api_solr.solr_field_type.text_ngram_und_6_0_0
+    - search_api_solr.solr_field_type.text_en_7_0_0
+    - search_api_solr.solr_field_type.text_ngram_und_7_0_0
     - search_api_solr.solr_field_type.text_ngramstring_und_6_0_0
     - search_api_solr.solr_field_type.text_phonetic_en_7_0_0
     - search_api_solr.solr_field_type.text_phonetic_und_7_0_0
     - search_api_solr.solr_field_type.text_string_und_6_0_0
-    - search_api_solr.solr_field_type.text_und_6_0_0
+    - search_api_solr.solr_field_type.text_und_7_0_0
     - search_api_solr.solr_request_dispatcher.request_dispatcher_httpcachingnever_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_autocomplete_default_7_0_0
     - search_api_solr.solr_request_handler.request_handler_extract_default_7_0_0
@@ -43,7 +43,7 @@ backend_config:
     scheme: http
     host: solr
     port: 8983
-    path: /solr
+    path: /
     core: dev
     timeout: 5
     index_timeout: 5
@@ -60,8 +60,8 @@ backend_config:
     stats_cache: org.apache.solr.search.stats.LRUStatsCache
     distrib: true
     context: solr
-    username: admin
-    password: Fhik2006_
+    username: solr
+    password: SolrRocks
   optimize: false
   fallback_multiple: false
   disabled_field_types: {  }
