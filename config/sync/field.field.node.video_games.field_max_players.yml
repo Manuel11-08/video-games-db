@@ -1,0 +1,23 @@
+uuid: 48c11f14-fc59-43de-a8e2-e0256ac7937c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_players
+    - node.type.video_games
+id: node.video_games.field_max_players
+field_name: field_max_players
+entity_type: node
+bundle: video_games
+label: 'Max Players'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

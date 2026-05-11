@@ -3,7 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.article
+    - field.field.node.video_games.field_all_play_styles
+    - field.field.node.video_games.field_completionists
+    - field.field.node.video_games.field_console
+    - field.field.node.video_games.field_genre
+    - field.field.node.video_games.field_handheld
+    - field.field.node.video_games.field_licensed
+    - field.field.node.video_games.field_main_extras
+    - field.field.node.video_games.field_main_story
+    - field.field.node.video_games.field_max_players
+    - field.field.node.video_games.field_multiplatform
+    - field.field.node.video_games.field_online
+    - field.field.node.video_games.field_publishers
+    - field.field.node.video_games.field_rating
+    - field.field.node.video_games.field_re_release
+    - field.field.node.video_games.field_review_score
+    - field.field.node.video_games.field_sales
+    - field.field.node.video_games.field_sequel
+    - field.field.node.video_games.field_used_price
+    - field.field.node.video_games.field_year
+    - node.type.video_games
   module:
     - node
 label: 'Importing CSV Files'
@@ -24,7 +43,7 @@ parser_configuration:
 processor: 'entity:node'
 processor_configuration:
   values:
-    type: article
+    type: video_games
   langcode: en
   insert_new: 1
   update_existing: 2
@@ -37,5 +56,435 @@ processor_configuration:
   expire: -1
   owner_feed_author: false
   owner_id: 0
-custom_sources: {  }
-mappings: {  }
+custom_sources:
+  title:
+    value: Title
+    label: Title
+    machine_name: title
+    type: csv
+  features_handheld:
+    value: 'Features.Handheld?'
+    label: 'Features.Handheld?'
+    machine_name: features_handheld
+    type: csv
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: csv
+  features_max_players:
+    value: 'Features.Max Players'
+    label: 'Features.Max Players'
+    machine_name: features_max_players
+    type: csv
+  features_multiplatform:
+    value: 'Features.Multiplatform?'
+    label: 'Features.Multiplatform?'
+    machine_name: features_multiplatform
+    type: csv
+  features_online:
+    value: 'Features.Online?'
+    label: 'Features.Online?'
+    machine_name: features_online
+    type: csv
+  metadata_genres:
+    value: Metadata.Genres
+    label: Metadata.Genres
+    machine_name: metadata_genres
+    type: csv
+  metadata_licensed:
+    value: 'Metadata.Licensed?'
+    label: 'Metadata.Licensed?'
+    machine_name: metadata_licensed
+    type: csv
+  metadata_publishers:
+    value: Metadata.Publishers
+    label: Metadata.Publishers
+    machine_name: metadata_publishers
+    type: csv
+  metadata_sequel:
+    value: 'Metadata.Sequel?'
+    label: 'Metadata.Sequel?'
+    machine_name: metadata_sequel
+    type: csv
+  metrics_review_score:
+    value: 'Metrics.Review Score'
+    label: 'Metrics.Review Score'
+    machine_name: metrics_review_score
+    type: csv
+  metrics_sales:
+    value: Metrics.Sales
+    label: Metrics.Sales
+    machine_name: metrics_sales
+    type: csv
+  metrics_used_price:
+    value: 'Metrics.Used Price'
+    label: 'Metrics.Used Price'
+    machine_name: metrics_used_price
+    type: csv
+  release_console:
+    value: Release.Console
+    label: Release.Console
+    machine_name: release_console
+    type: csv
+  release_rating:
+    value: Release.Rating
+    label: Release.Rating
+    machine_name: release_rating
+    type: csv
+  release_re_release:
+    value: 'Release.Re-release?'
+    label: 'Release.Re-release?'
+    machine_name: release_re_release
+    type: csv
+  release_year:
+    value: Release.Year
+    label: Release.Year
+    machine_name: release_year
+    type: csv
+  length_all_playstyles_average:
+    value: 'Length.All PlayStyles.Average'
+    label: 'Length.All PlayStyles.Average'
+    machine_name: length_all_playstyles_average
+    type: csv
+  length_all_playstyles_leisure:
+    value: 'Length.All PlayStyles.Leisure'
+    label: 'Length.All PlayStyles.Leisure'
+    machine_name: length_all_playstyles_leisure
+    type: csv
+  length_all_playstyles_median:
+    value: 'Length.All PlayStyles.Median'
+    label: 'Length.All PlayStyles.Median'
+    machine_name: length_all_playstyles_median
+    type: csv
+  length_all_playstyles_polled:
+    value: 'Length.All PlayStyles.Polled'
+    label: 'Length.All PlayStyles.Polled'
+    machine_name: length_all_playstyles_polled
+    type: csv
+  length_all_playstyles_rushed:
+    value: 'Length.All PlayStyles.Rushed'
+    label: 'Length.All PlayStyles.Rushed'
+    machine_name: length_all_playstyles_rushed
+    type: csv
+  length_completionists_average:
+    value: Length.Completionists.Average
+    label: Length.Completionists.Average
+    machine_name: length_completionists_average
+    type: csv
+  length_completionists_leisure:
+    value: Length.Completionists.Leisure
+    label: Length.Completionists.Leisure
+    machine_name: length_completionists_leisure
+    type: csv
+  length_completionists_median:
+    value: Length.Completionists.Median
+    label: Length.Completionists.Median
+    machine_name: length_completionists_median
+    type: csv
+  length_completionists_polled:
+    value: Length.Completionists.Polled
+    label: Length.Completionists.Polled
+    machine_name: length_completionists_polled
+    type: csv
+  length_completionists_rushed:
+    value: Length.Completionists.Rushed
+    label: Length.Completionists.Rushed
+    machine_name: length_completionists_rushed
+    type: csv
+  length_main_extras_average:
+    value: 'Length.Main + Extras.Average'
+    label: 'Length.Main + Extras.Average'
+    machine_name: length_main_extras_average
+    type: csv
+  length_main_extras_leisure:
+    value: 'Length.Main + Extras.Leisure'
+    label: 'Length.Main + Extras.Leisure'
+    machine_name: length_main_extras_leisure
+    type: csv
+  length_main_extras_median:
+    value: 'Length.Main + Extras.Median'
+    label: 'Length.Main + Extras.Median'
+    machine_name: length_main_extras_median
+    type: csv
+  length_main_extras_polled:
+    value: 'Length.Main + Extras.Polled'
+    label: 'Length.Main + Extras.Polled'
+    machine_name: length_main_extras_polled
+    type: csv
+  length_main_extras_rushed:
+    value: 'Length.Main + Extras.Rushed'
+    label: 'Length.Main + Extras.Rushed'
+    machine_name: length_main_extras_rushed
+    type: csv
+  length_main_story_average:
+    value: 'Length.Main Story.Average'
+    label: 'Length.Main Story.Average'
+    machine_name: length_main_story_average
+    type: csv
+  length_main_story_leisure:
+    value: 'Length.Main Story.Leisure'
+    label: 'Length.Main Story.Leisure'
+    machine_name: length_main_story_leisure
+    type: csv
+  length_main_story_median:
+    value: 'Length.Main Story.Median'
+    label: 'Length.Main Story.Median'
+    machine_name: length_main_story_median
+    type: csv
+  length_main_story_polled:
+    value: 'Length.Main Story.Polled'
+    label: 'Length.Main Story.Polled'
+    machine_name: length_main_story_polled
+    type: csv
+  length_main_story_rushed:
+    value: 'Length.Main Story.Rushed'
+    label: 'Length.Main Story.Rushed'
+    machine_name: length_main_story_rushed
+    type: csv
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_handheld
+    map:
+      value: features_handheld
+    settings:
+      language: null
+  -
+    target: field_max_players
+    map:
+      value: features_max_players
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_multiplatform
+    map:
+      value: features_multiplatform
+    settings:
+      language: null
+  -
+    target: field_online
+    map:
+      value: features_online
+    settings:
+      language: null
+  -
+    target: field_genre
+    map:
+      value: metadata_genres
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_licensed
+    map:
+      value: metadata_licensed
+    settings:
+      language: null
+  -
+    target: field_publishers
+    map:
+      value: metadata_publishers
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_sequel
+    map:
+      value: metadata_sequel
+    settings:
+      language: null
+  -
+    target: field_review_score
+    map:
+      value: metrics_review_score
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_sales
+    map:
+      value: metrics_sales
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_used_price
+    map:
+      value: metrics_used_price
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_console
+    map:
+      value: release_console
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_rating
+    map:
+      value: release_rating
+    settings:
+      language: null
+  -
+    target: field_re_release
+    map:
+      value: release_re_release
+    settings:
+      language: null
+  -
+    target: field_year
+    map:
+      value: release_year
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_all_play_styles
+    map:
+      value: length_all_playstyles_average
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_all_play_styles
+    map:
+      value: length_all_playstyles_leisure
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_all_play_styles
+    map:
+      value: length_all_playstyles_median
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_all_play_styles
+    map:
+      value: length_all_playstyles_polled
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_all_play_styles
+    map:
+      value: length_all_playstyles_rushed
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_completionists
+    map:
+      value: length_completionists_average
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_completionists
+    map:
+      value: length_completionists_leisure
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_completionists
+    map:
+      value: length_completionists_median
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_completionists
+    map:
+      value: length_completionists_polled
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_completionists
+    map:
+      value: length_completionists_rushed
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_extras
+    map:
+      value: length_main_extras_average
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_extras
+    map:
+      value: length_main_extras_leisure
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_extras
+    map:
+      value: length_main_extras_median
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_extras
+    map:
+      value: length_main_extras_polled
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_extras
+    map:
+      value: length_main_extras_rushed
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_story
+    map:
+      value: length_main_story_average
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_story
+    map:
+      value: length_main_story_leisure
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_story
+    map:
+      value: length_main_story_median
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_story
+    map:
+      value: length_main_story_polled
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_main_story
+    map:
+      value: length_main_story_rushed
+    settings:
+      language: null
+    unique: {  }

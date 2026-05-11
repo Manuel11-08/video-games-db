@@ -1,0 +1,23 @@
+uuid: 1af69165-35ab-498e-b5ac-3377f3a0525a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.video_games
+id: node.video_games.field_year
+field_name: field_year
+entity_type: node
+bundle: video_games
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

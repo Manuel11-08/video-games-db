@@ -1,0 +1,21 @@
+uuid: fa97bd74-f679-4d7d-be8c-99be691cb199
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_re_release
+    - node.type.video_games
+id: node.video_games.field_re_release
+field_name: field_re_release
+entity_type: node
+bundle: video_games
+label: Re-release
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

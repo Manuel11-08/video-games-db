@@ -1,0 +1,36 @@
+uuid: 554f387e-badb-480f-a6a8-322185f1a422
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_rating
+field_name: field_rating
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: e
+      label: E
+    -
+      value: m
+      label: M
+    -
+      value: t
+      label: T
+    -
+      value: ao
+      label: AO
+    -
+      value: rp
+      label: RP
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

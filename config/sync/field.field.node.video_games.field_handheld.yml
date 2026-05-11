@@ -1,0 +1,21 @@
+uuid: 5c77a17f-69af-4c1b-be10-4357220bde17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_handheld
+    - node.type.video_games
+id: node.video_games.field_handheld
+field_name: field_handheld
+entity_type: node
+bundle: video_games
+label: Handheld
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

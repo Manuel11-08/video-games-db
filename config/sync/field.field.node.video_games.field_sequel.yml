@@ -1,0 +1,21 @@
+uuid: 59b0d572-c762-4194-ad85-063984fce9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sequel
+    - node.type.video_games
+id: node.video_games.field_sequel
+field_name: field_sequel
+entity_type: node
+bundle: video_games
+label: Sequel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

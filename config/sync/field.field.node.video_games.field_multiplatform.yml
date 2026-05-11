@@ -1,0 +1,21 @@
+uuid: a8103fac-1a49-4ba4-b475-6072b91fb1ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_multiplatform
+    - node.type.video_games
+id: node.video_games.field_multiplatform
+field_name: field_multiplatform
+entity_type: node
+bundle: video_games
+label: Multiplatform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean

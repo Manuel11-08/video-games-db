@@ -1,0 +1,23 @@
+uuid: b0bdf2b5-c432-4968-b066-0cdcb09cb074
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.video_games
+  module:
+    - feeds
+id: node.video_games.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: video_games
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

@@ -1,0 +1,19 @@
+uuid: eddefa88-2440-4515-9318-bc15d1e28965
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_completionists
+    - node.type.video_games
+id: node.video_games.field_completionists
+field_name: field_completionists
+entity_type: node
+bundle: video_games
+label: Completionists
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

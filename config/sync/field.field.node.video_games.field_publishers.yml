@@ -1,0 +1,19 @@
+uuid: 05fde76f-1dd9-48e1-a212-3c77ce197fb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishers
+    - node.type.video_games
+id: node.video_games.field_publishers
+field_name: field_publishers
+entity_type: node
+bundle: video_games
+label: Publishers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: c04c757e-e3ee-4b5a-aa5a-5a3f1ede0a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_licensed
+    - node.type.video_games
+id: node.video_games.field_licensed
+field_name: field_licensed
+entity_type: node
+bundle: video_games
+label: Licensed
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean
