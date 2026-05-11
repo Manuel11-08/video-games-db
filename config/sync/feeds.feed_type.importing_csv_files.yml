@@ -330,12 +330,6 @@ mappings:
       language: null
     unique: {  }
   -
-    target: field_rating
-    map:
-      value: release_rating
-    settings:
-      language: null
-  -
     target: field_re_release
     map:
       value: release_re_release
@@ -485,6 +479,13 @@ mappings:
     target: field_main_story
     map:
       value: length_main_story_rushed
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_rating
+    map:
+      value: release_rating
     settings:
       language: null
     unique: {  }
