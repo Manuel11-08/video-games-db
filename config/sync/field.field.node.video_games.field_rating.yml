@@ -1,12 +1,10 @@
-uuid: 239cf238-61bb-4028-85c0-76f71f1adbfa
+uuid: 94c6d25a-ad8f-4508-a050-9972a8beb638
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_rating
     - node.type.video_games
-  module:
-    - options
 id: node.video_games.field_rating
 field_name: field_rating
 entity_type: node
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string
