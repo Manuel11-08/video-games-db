@@ -197,7 +197,7 @@ content:
     region: content
   field_year:
     type: number_integer
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
