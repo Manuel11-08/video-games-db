@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - search_api.server.solr_server_for_video_games
+    - search_api.server.servidor_local
   module:
     - node
     - search_api_solr
@@ -58,7 +58,15 @@ id: juegos_index
 name: 'Juegos Index'
 description: ''
 read_only: false
-field_settings: {  }
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
 datasource_settings:
   'entity:node':
     bundles:
@@ -85,4 +93,4 @@ options:
   delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
-server: solr_server_for_video_games
+server: servidor_local

@@ -1,0 +1,15 @@
+uuid: 2fbe9373-da70-4792-9164-61a1d6166b16
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: servidor_local
+name: 'Servidor Local'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: bigram
