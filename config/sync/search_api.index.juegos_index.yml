@@ -70,7 +70,7 @@ field_settings:
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
+      default: false
       selected:
         - video_games
     languages:
