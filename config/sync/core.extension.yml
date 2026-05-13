@@ -10,6 +10,7 @@ module:
   ckeditor5: 0
   comment: 0
   config: 0
+  contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -24,6 +25,8 @@ module:
   history: 0
   image: 0
   language: 0
+  layout_builder: 0
+  layout_discovery: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0

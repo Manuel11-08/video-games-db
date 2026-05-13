@@ -25,191 +25,389 @@ dependencies:
     - field.field.node.video_games.field_year
     - node.type.video_games
   module:
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          88d2cf60-4e75-499d-8302-bbfa24393b0a:
+            uuid: 88d2cf60-4e75-499d-8302-bbfa24393b0a
+            region: first
+            configuration:
+              id: 'field_block:node:video_games:field_console'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          18f3f9e5-9178-49fa-97ac-9f6732ca1b70:
+            uuid: 18f3f9e5-9178-49fa-97ac-9f6732ca1b70
+            region: second
+            configuration:
+              id: 'field_block:node:video_games:field_used_price'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          da76d340-7efb-4218-b08c-170893d80e0b:
+            uuid: da76d340-7efb-4218-b08c-170893d80e0b
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_completionists'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          397f974f-1115-40ff-afc4-e3037b3bd8bc:
+            uuid: 397f974f-1115-40ff-afc4-e3037b3bd8bc
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_genre'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          3442c650-6473-4276-8667-81fc6ee03ae6:
+            uuid: 3442c650-6473-4276-8667-81fc6ee03ae6
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_handheld'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 13
+            additional: {  }
+          316740d9-c348-4871-bb85-1028274a4f7f:
+            uuid: 316740d9-c348-4871-bb85-1028274a4f7f
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_licensed'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          f02e1f7d-2f8a-485b-92a8-ecba384ba408:
+            uuid: f02e1f7d-2f8a-485b-92a8-ecba384ba408
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_main_extras'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+          2fac7164-1c01-405c-8d89-a2582980dbc0:
+            uuid: 2fac7164-1c01-405c-8d89-a2582980dbc0
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_main_story'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          8adb5441-8f85-4204-b67c-3899f69cfc62:
+            uuid: 8adb5441-8f85-4204-b67c-3899f69cfc62
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_max_players'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 17
+            additional: {  }
+          c8d2ea52-93b6-494b-a727-b1fe2034419b:
+            uuid: c8d2ea52-93b6-494b-a727-b1fe2034419b
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_multiplatform'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 18
+            additional: {  }
+          a564f3d8-687e-4a1e-a9e1-c1b6c8f9ec44:
+            uuid: a564f3d8-687e-4a1e-a9e1-c1b6c8f9ec44
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_online'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 19
+            additional: {  }
+          8ceec22d-ae90-49c0-94d9-c0241f0c3f7c:
+            uuid: 8ceec22d-ae90-49c0-94d9-c0241f0c3f7c
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_re_release'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 20
+            additional: {  }
+          d34ca16e-418b-4629-9e17-35056aa9f4fe:
+            uuid: d34ca16e-418b-4629-9e17-35056aa9f4fe
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_review_score'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 21
+            additional: {  }
+          70fe552e-cb9b-42b9-b866-9155ebe877da:
+            uuid: 70fe552e-cb9b-42b9-b866-9155ebe877da
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_sales'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 22
+            additional: {  }
+          66b02e22-054a-4685-96e4-53a960bb0f56:
+            uuid: 66b02e22-054a-4685-96e4-53a960bb0f56
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_sequel'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 23
+            additional: {  }
+          8129ad44-fd9c-4ca4-89bd-513d588d5906:
+            uuid: 8129ad44-fd9c-4ca4-89bd-513d588d5906
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_year'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: inline
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 24
+            additional: {  }
+          0916f782-0e48-4340-95e8-ffbdf4c22de8:
+            uuid: 0916f782-0e48-4340-95e8-ffbdf4c22de8
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_rating'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 25
+            additional: {  }
+          c65936a3-d85a-4b16-bd2e-a3d97056acc4:
+            uuid: c65936a3-d85a-4b16-bd2e-a3d97056acc4
+            region: content
+            configuration:
+              id: 'extra_field_block:node:video_games:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 9
+            additional: {  }
+          d871f02b-bd46-40b1-9642-df005e530199:
+            uuid: d871f02b-bd46-40b1-9642-df005e530199
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_all_play_styles'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          67ba63bd-d543-4e98-a1b8-81376badd4db:
+            uuid: 67ba63bd-d543-4e98-a1b8-81376badd4db
+            region: content
+            configuration:
+              id: 'field_block:node:video_games:field_publishers'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
 id: node.video_games.default
 targetEntityType: node
 bundle: video_games
 mode: default
-content:
-  field_all_play_styles:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  field_completionists:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_console:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_genre:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  field_handheld:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_licensed:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 106
-    region: content
-  field_main_extras:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 107
-    region: content
-  field_main_story:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 108
-    region: content
-  field_max_players:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 109
-    region: content
-  field_multiplatform:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 110
-    region: content
-  field_online:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 111
-    region: content
-  field_publishers:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 112
-    region: content
-  field_rating:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 120
-    region: content
-  field_re_release:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 114
-    region: content
-  field_review_score:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 115
-    region: content
-  field_sales:
-    type: number_decimal
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 116
-    region: content
-  field_sequel:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 117
-    region: content
-  field_used_price:
-    type: number_decimal
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 118
-    region: content
-  field_year:
-    type: number_integer
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 119
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
+content: {  }
 hidden:
   feeds_item: true
+  field_all_play_styles: true
+  field_completionists: true
+  field_console: true
+  field_genre: true
+  field_handheld: true
+  field_licensed: true
+  field_main_extras: true
+  field_main_story: true
+  field_max_players: true
+  field_multiplatform: true
+  field_online: true
+  field_publishers: true
+  field_rating: true
+  field_re_release: true
+  field_review_score: true
+  field_sales: true
+  field_sequel: true
+  field_used_price: true
+  field_year: true
   langcode: true
+  links: true
   search_api_excerpt: true

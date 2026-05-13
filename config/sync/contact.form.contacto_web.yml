@@ -1,0 +1,12 @@
+uuid: 658bd008-dbd1-405f-9983-a38b5abc2468
+langcode: en
+status: true
+dependencies: {  }
+id: contacto_web
+label: 'Contacto '
+recipients:
+  - manueltoconlopez@gmail.com
+reply: ''
+weight: 0
+message: '¡Gracias por tu mensaje! Te responderemos lo antes posible.'
+redirect: ''
