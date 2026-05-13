@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_console
     - search_api.server.servidor_local
   module:
     - node
@@ -59,6 +60,14 @@ name: 'Juegos Index'
 description: ''
 read_only: false
 field_settings:
+  filtro_consola:
+    label: Console
+    datasource_id: 'entity:node'
+    property_path: field_console
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_console
   title:
     label: Title
     datasource_id: 'entity:node'
