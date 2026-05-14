@@ -60,7 +60,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
+          element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -328,7 +328,7 @@ display:
           columns: 3
           automatic_width: true
           alignment: horizontal
-          row_class_custom: ''
+          row_class_custom: tarjeta-juego
           row_class_default: true
           col_class_custom: ''
           col_class_default: true

@@ -1,0 +1,42 @@
+uuid: ebf628eb-c67f-48c4-9db3-f3d9ae4c53c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.juegos_index
+    - views.view.buscador
+  module:
+    - views
+id: buscador
+label: Buscador
+index_id: juegos_index
+suggester_settings:
+  live_results:
+    fields:
+      - title
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes:
+      'entity:node':
+        video_games: ''
+  server:
+    fields:
+      - title
+suggester_weights:
+  live_results: 0
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:buscador':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

@@ -1,0 +1,29 @@
+uuid: 7e0e394b-c7d5-4f5c-8872-5bfcfcda1a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.consola
+  module:
+    - facets
+    - system
+  theme:
+    - olivero
+id: olivero_consola
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:consola'
+settings:
+  id: 'facet_block:consola'
+  label: Consola
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_consola
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /buscador
