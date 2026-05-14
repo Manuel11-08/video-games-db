@@ -75,6 +75,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          b0589af3-7619-4b68-9883-210495af563f:
+            uuid: b0589af3-7619-4b68-9883-210495af563f
+            region: first
+            configuration:
+              id: 'field_block:node:video_games:field_genre'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -96,22 +112,6 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 11
-            additional: {  }
-          397f974f-1115-40ff-afc4-e3037b3bd8bc:
-            uuid: 397f974f-1115-40ff-afc4-e3037b3bd8bc
-            region: content
-            configuration:
-              id: 'field_block:node:video_games:field_genre'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 12
             additional: {  }
           3442c650-6473-4276-8667-81fc6ee03ae6:
             uuid: 3442c650-6473-4276-8667-81fc6ee03ae6
@@ -386,13 +386,20 @@ id: node.video_games.default
 targetEntityType: node
 bundle: video_games
 mode: default
-content: {  }
+content:
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: first
 hidden:
   feeds_item: true
   field_all_play_styles: true
   field_completionists: true
   field_console: true
-  field_genre: true
   field_handheld: true
   field_licensed: true
   field_main_extras: true

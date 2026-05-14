@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_console
+    - field.storage.node.field_genre
     - search_api.server.servidor_local
   module:
     - node
     - search_api_solr
+    - taxonomy
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -68,6 +70,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_console
+  name:
+    label: 'Genre » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_genre:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_genre
+      module:
+        - taxonomy
   title:
     label: Title
     datasource_id: 'entity:node'

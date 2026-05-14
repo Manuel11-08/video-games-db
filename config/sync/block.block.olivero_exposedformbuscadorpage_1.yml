@@ -1,4 +1,4 @@
-uuid: 4317b5c6-8a6d-48e5-830e-1cc0cb3c0b78
+uuid: 3959aaaa-1558-4a0c-b491-daa456f3aa45
 langcode: en
 status: true
 dependencies:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/portada\r\n/buscador"
+    pages: /portada

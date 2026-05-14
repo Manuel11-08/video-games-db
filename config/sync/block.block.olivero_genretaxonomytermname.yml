@@ -1,0 +1,29 @@
+uuid: 7fee0980-1cc5-4d7a-90aa-a5bda2f79f71
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.genre_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - olivero
+id: olivero_genretaxonomytermname
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:genre_taxonomy_term_name'
+settings:
+  id: 'facet_block:genre_taxonomy_term_name'
+  label: 'Genre » Taxonomy term » Name'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_genretaxonomytermname
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portada

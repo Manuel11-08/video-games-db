@@ -249,7 +249,8 @@ mappings:
       value: title
     settings:
       language: null
-    unique: {  }
+    unique:
+      value: 1
   -
     target: field_handheld
     map:
@@ -275,13 +276,6 @@ mappings:
       value: features_online
     settings:
       language: null
-  -
-    target: field_genre
-    map:
-      value: metadata_genres
-    settings:
-      language: null
-    unique: {  }
   -
     target: field_licensed
     map:
@@ -489,3 +483,12 @@ mappings:
     settings:
       language: null
     unique: {  }
+  -
+    target: field_genre
+    map:
+      target_id: metadata_genres
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 1
+      autocreate_bundle: genres
