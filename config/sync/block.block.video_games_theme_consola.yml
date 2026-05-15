@@ -1,0 +1,29 @@
+uuid: 1bb5beb3-8ec6-4e75-a2e2-08a4fe789bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.consola
+  module:
+    - facets
+    - system
+  theme:
+    - video_games_theme
+id: video_games_theme_consola
+theme: video_games_theme
+region: header
+weight: 0
+provider: null
+plugin: 'facet_block:consola'
+settings:
+  id: 'facet_block:consola'
+  label: Consola
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_consola
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /buscador

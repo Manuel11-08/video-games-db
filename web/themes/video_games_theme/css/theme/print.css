@@ -1,0 +1,209 @@
+/* =========================================
+   0. VARIABLES GLOBALES (El cerebro del diseño)
+   ========================================= */
+:root {
+    --vg-color-primary: #3b82f6;       /* Azul principal */
+    --vg-color-primary-hover: #2563eb; /* Azul oscuro al pasar el ratón */
+    --vg-color-surface: #ffffff;       /* Fondo de las tarjetas */
+    --vg-color-text-main: #1f2937;     /* Texto principal oscuro */
+    --vg-color-text-muted: #6b7280;    /* Texto secundario gris */
+    --vg-color-border: #e5e7eb;        /* Color de las líneas */
+    --vg-color-success: #10b981;       /* Verde para los precios */
+    
+    --vg-radius-lg: 12px;              /* Bordes redondeados grandes */
+    --vg-radius-sm: 6px;               /* Bordes redondeados pequeños */
+    
+    --vg-shadow-normal: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --vg-shadow-hover: 0 12px 20px -3px rgba(0, 0, 0, 0.1);
+    
+    --vg-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================
+   1. BUSCADOR SUPERIOR (Alta especificidad)
+   ========================================= */
+/* Apuntamos directamente a la región de contenido para ganar a Bootstrap */
+main .region-content form[id^="views-exposed-form"] {
+    background-color: var(--vg-color-surface);
+    padding: 24px;
+    border-radius: var(--vg-radius-lg);
+    border: 1px solid var(--vg-color-border);
+    margin-bottom: 30px;
+    box-shadow: var(--vg-shadow-normal);
+}
+
+main .region-content form[id^="views-exposed-form"] .form--inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+main .region-content form[id^="views-exposed-form"] input[type="text"] {
+    border-radius: var(--vg-radius-sm);
+    border: 2px solid var(--vg-color-border);
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: var(--vg-transition);
+    background-color: #f9fafb;
+    width: 100%;
+    max-width: 300px;
+}
+
+main .region-content form[id^="views-exposed-form"] input[type="text"]:focus {
+    border-color: var(--vg-color-primary);
+    background-color: var(--vg-color-surface);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+main .region-content form[id^="views-exposed-form"] input[type="submit"] {
+    border-radius: var(--vg-radius-sm);
+    background-color: var(--vg-color-primary);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 11px 24px;
+    border: none;
+    cursor: pointer;
+    transition: var(--vg-transition);
+}
+
+main .region-content form[id^="views-exposed-form"] input[type="submit"]:hover {
+    background-color: var(--vg-color-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   2. FILTROS LATERALES (FACETAS)
+   ========================================= */
+/* Usamos .block-facets repetido o dentro del sidebar para ganar especificidad */
+aside .block-facets,
+.region-sidebar-first .block-facets {
+    background-color: var(--vg-color-surface);
+    border: 1px solid var(--vg-color-border);
+    border-radius: var(--vg-radius-lg);
+    padding: 20px;
+    box-shadow: var(--vg-shadow-normal);
+    margin-bottom: 20px;
+}
+
+aside .block-facets h2,
+.region-sidebar-first .block-facets h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--vg-color-text-main);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f3f4f6;
+}
+
+aside .block-facets ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+aside .block-facets li { 
+    margin-bottom: 4px; 
+}
+
+aside .block-facets li a {
+    color: var(--vg-color-text-muted);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-radius: var(--vg-radius-sm);
+    transition: var(--vg-transition);
+    font-size: 0.95rem;
+}
+
+aside .block-facets li a:hover {
+    background-color: #f3f4f6;
+    color: var(--vg-color-text-main);
+}
+
+aside .block-facets li a.is-active {
+    font-weight: 800;
+    color: var(--vg-color-primary);
+    background-color: #eff6ff;
+}
+
+/* =========================================
+   3. TARJETAS DE LOS VIDEOJUEGOS (GRID)
+   ========================================= */
+main .region-content .view-content .views-row,
+main .region-content .views-view-grid .views-col {
+    background-color: var(--vg-color-surface);
+    border: 1px solid var(--vg-color-border);
+    border-radius: var(--vg-radius-lg);
+    padding: 20px;
+    box-shadow: var(--vg-shadow-normal);
+    transition: var(--vg-transition);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main .region-content .view-content .views-row:hover,
+main .region-content .views-view-grid .views-col:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--vg-shadow-hover);
+    border-color: #bfdbfe;
+}
+
+main .region-content .view-content .views-row a,
+main .region-content .views-view-grid .views-col a {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--vg-color-text-main);
+    text-decoration: none;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+main .region-content .view-content .views-row a:hover,
+main .region-content .views-view-grid .views-col a:hover {
+    color: var(--vg-color-primary);
+}
+
+/* =========================================
+   4. PÍLDORAS (CONSOLAS, GÉNEROS Y PRECIOS)
+   ========================================= */
+main .region-content .views-field-field-genre {
+    display: inline-block;
+    background-color: #f3f4f6;
+    color: var(--vg-color-text-muted);
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 6px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+main .region-content .views-field-field-console {
+    display: inline-block;
+    background-color: var(--vg-color-text-main);
+    color: var(--vg-color-surface);
+    padding: 4px 12px;
+    border-radius: var(--vg-radius-sm);
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-right: 6px;
+    margin-top: 8px;
+}
+
+main .region-content .views-field-used-price {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--vg-color-success);
+    margin-top: auto; /* Empuja el precio al fondo de la tarjeta */
+    padding-top: 15px;
+    border-top: 1px solid var(--vg-color-border);
+}

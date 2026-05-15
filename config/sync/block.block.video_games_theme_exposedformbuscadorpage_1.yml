@@ -1,0 +1,28 @@
+uuid: 14284e6d-1242-43b7-8984-101e6f6346c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.buscador
+  module:
+    - system
+    - views
+  theme:
+    - video_games_theme
+id: video_games_theme_exposedformbuscadorpage_1
+theme: video_games_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:buscador-page_1'
+settings:
+  id: 'views_exposed_filter_block:buscador-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/portada\r\n/buscador"

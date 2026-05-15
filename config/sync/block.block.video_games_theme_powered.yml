@@ -1,0 +1,22 @@
+uuid: 5cd97b77-5975-401c-b355-dff58bb5dbaa
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - video_games_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: video_games_theme_powered
+theme: video_games_theme
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

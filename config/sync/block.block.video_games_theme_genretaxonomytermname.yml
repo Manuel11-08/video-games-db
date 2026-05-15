@@ -1,0 +1,29 @@
+uuid: 86df10fd-2ac7-4376-82a6-c80621a3015d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.genre_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - video_games_theme
+id: video_games_theme_genretaxonomytermname
+theme: video_games_theme
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:genre_taxonomy_term_name'
+settings:
+  id: 'facet_block:genre_taxonomy_term_name'
+  label: 'Genre » Taxonomy term » Name'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_genretaxonomytermname
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portada

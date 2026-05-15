@@ -1,0 +1,22 @@
+uuid: 3fccbc65-b52e-4a07-bca9-41056cc7ea0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - video_games_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: video_games_theme_help
+theme: video_games_theme
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
