@@ -24,9 +24,11 @@
         "drupal/core-recommended": "^11.3",
         "drupal/facets": "^3.0",
         "drupal/feeds": "^3.2",
+        "drupal/feeds_tamper": "@alpha",
         "drupal/search_api": "^1.40",
         "drupal/search_api_autocomplete": "^1.11",
         "drupal/search_api_solr": "^4.3",
+        "drupal/tamper": "@alpha",
         "drush/drush": "^13.7"
     },
     "conflict": {

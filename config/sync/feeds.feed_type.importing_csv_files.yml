@@ -24,7 +24,11 @@ dependencies:
     - field.field.node.video_games.field_year
     - node.type.video_games
   module:
+    - feeds_tamper
     - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
 label: 'Importing CSV Files'
 id: importing_csv_files
 description: ''

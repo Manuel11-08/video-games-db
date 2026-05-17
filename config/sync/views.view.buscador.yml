@@ -227,7 +227,20 @@ display:
             value: 'No games found with that name. Try again!'
             format: basic_html
           tokenize: false
-      sorts: {  }
+      sorts:
+        field_year:
+          id: field_year
+          table: search_api_index_juegos_index
+          field: field_year
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Año de lanzamiento'
+            field_identifier: field_year
+          exposed: true
       arguments: {  }
       filters:
         search_api_fulltext:
@@ -277,50 +290,6 @@ display:
           min_length: null
           fields:
             - title
-        filtro_consola:
-          id: filtro_consola
-          table: search_api_index_juegos_index
-          field: filtro_consola
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api_text
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: filtro_consola_op
-            label: 'Consola:'
-            description: ''
-            use_operator: false
-            operator: filtro_consola_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: filtro_consola
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            min_placeholder: ''
-            max_placeholder: ''
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
       style:
         type: grid
         options:
@@ -354,6 +323,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_used_price'
@@ -375,6 +346,8 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_used_price'

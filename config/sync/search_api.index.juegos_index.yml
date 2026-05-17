@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_console
     - field.storage.node.field_genre
+    - field.storage.node.field_year
     - search_api.server.servidor_local
   module:
     - node
@@ -62,6 +63,14 @@ name: 'Juegos Index'
 description: ''
 read_only: false
 field_settings:
+  field_year:
+    label: Year
+    datasource_id: 'entity:node'
+    property_path: field_year
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_year
   filtro_consola:
     label: Console
     datasource_id: 'entity:node'
