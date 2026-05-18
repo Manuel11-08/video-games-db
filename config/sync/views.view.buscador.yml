@@ -227,6 +227,19 @@ display:
             value: 'No games found with that name. Try again!'
             format: basic_html
           tokenize: false
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<div class=\"alert alert-warning\" role=\"alert\" style=\"text-align: center; padding: 20px; border-radius: 8px;\">\r\n  <strong style=\"font-size: 1.2rem;\">¡Vaya! No hemos encontrado ningún videojuego que coincida con tu búsqueda.</strong>\r\n  <p style=\"margin-top: 10px; margin-bottom: 0;\">Prueba a revisar la ortografía o utiliza los filtros de consola del lateral.</p>\r\n</div>"
+            format: full_html
+          tokenize: false
       sorts:
         field_year:
           id: field_year

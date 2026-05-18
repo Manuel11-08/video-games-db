@@ -11,7 +11,7 @@ _core:
 id: video_games_theme_powered
 theme: video_games_theme
 region: header
-weight: 0
+weight: 1
 provider: null
 plugin: system_powered_by_block
 settings:

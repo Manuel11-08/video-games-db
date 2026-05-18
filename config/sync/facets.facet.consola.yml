@@ -29,9 +29,9 @@ enable_parent_when_child_gets_disabled: true
 widget:
   type: checkbox
   config:
-    show_numbers: false
+    show_numbers: true
     soft_limit: 0
-    show_reset_link: false
+    show_reset_link: true
     reset_text: 'Show all'
     hide_reset_when_no_selection: false
     soft_limit_settings:

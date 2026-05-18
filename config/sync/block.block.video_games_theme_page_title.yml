@@ -9,7 +9,7 @@ _core:
 id: video_games_theme_page_title
 theme: video_games_theme
 region: header
-weight: -5
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

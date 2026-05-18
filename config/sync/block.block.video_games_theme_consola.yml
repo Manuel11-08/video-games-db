@@ -12,7 +12,7 @@ dependencies:
 id: video_games_theme_consola
 theme: video_games_theme
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'facet_block:consola'
 settings:
@@ -21,7 +21,7 @@ settings:
   label_display: '0'
   provider: facets
   context_mapping: {  }
-  block_id: olivero_consola
+  block_id: video_games_theme_consola
 visibility:
   request_path:
     id: request_path

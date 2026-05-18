@@ -11,7 +11,7 @@ _core:
 id: video_games_theme_messages
 theme: video_games_theme
 region: header
-weight: -5
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:
