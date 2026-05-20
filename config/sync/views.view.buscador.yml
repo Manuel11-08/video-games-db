@@ -304,16 +304,11 @@ display:
           fields:
             - title
       style:
-        type: grid
+        type: default
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: tarjeta-juego
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       query:
