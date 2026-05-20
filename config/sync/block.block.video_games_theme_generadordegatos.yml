@@ -1,0 +1,23 @@
+uuid: c5f3dfb9-145e-4047-b45e-c122212ee591
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:501286da-b96e-41f5-b7e0-14b90ded5e49'
+  module:
+    - block_content
+  theme:
+    - video_games_theme
+id: video_games_theme_generadordegatos
+theme: video_games_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:501286da-b96e-41f5-b7e0-14b90ded5e49'
+settings:
+  id: 'block_content:501286da-b96e-41f5-b7e0-14b90ded5e49'
+  label: 'Generador de Gatos'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }
