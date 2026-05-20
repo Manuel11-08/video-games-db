@@ -11,8 +11,8 @@ dependencies:
     - video_games_theme
 id: video_games_theme_genretaxonomytermname
 theme: video_games_theme
-region: content
-weight: 0
+region: sidebar_first
+weight: -7
 provider: null
 plugin: 'facet_block:genre_taxonomy_term_name'
 settings:
@@ -21,9 +21,9 @@ settings:
   label_display: '0'
   provider: facets
   context_mapping: {  }
-  block_id: olivero_genretaxonomytermname
+  block_id: video_games_theme_genretaxonomytermname
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /portada
+    pages: "/portada\r\n/buscador"
