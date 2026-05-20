@@ -1,0 +1,5 @@
+name: 'Video Games Weather'
+type: module
+description: 'Proporciona un bloque personalizado del tiempo usando la API de Open-Meteo.'
+core_version_requirement: ^10 || ^11
+package: Custom
