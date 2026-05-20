@@ -12,7 +12,7 @@ dependencies:
 id: video_games_theme_exposedformbuscadorpage_1
 theme: video_games_theme
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_exposed_filter_block:buscador-page_1'
 settings:

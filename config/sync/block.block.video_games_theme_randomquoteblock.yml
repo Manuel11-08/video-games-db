@@ -1,0 +1,25 @@
+uuid: 1f041e71-7a00-45bb-abc9-9a532c1da938
+langcode: en
+status: true
+dependencies:
+  module:
+    - random_quote
+    - system
+  theme:
+    - video_games_theme
+id: video_games_theme_randomquoteblock
+theme: video_games_theme
+region: content
+weight: -8
+provider: null
+plugin: random_quote_block
+settings:
+  id: random_quote_block
+  label: 'Random Quote Block'
+  label_display: '0'
+  provider: random_quote
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /portada

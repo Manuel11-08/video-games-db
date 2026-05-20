@@ -1,0 +1,5 @@
+name: 'Random Quote'
+type: module
+description: 'Prueba para ver si el api de random quote funciona o no'
+package: Custom
+core_version_requirement: ^9 || ^10 || ^11
