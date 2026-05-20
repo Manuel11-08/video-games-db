@@ -273,7 +273,11 @@ display:
           value:
             video_games: video_games
       style:
-        type: grid
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
         options:
